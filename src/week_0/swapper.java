@@ -1,14 +1,13 @@
+package week_0;
+
+import abstract_classes.funcMaster;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class swapper extends funcMaster {
-    public swapper(String selection, ArrayList<Integer> nums) {
+    public swapper(String selection) {
         super.selection = selection;
-    }
-
-    @Override
-    public String getSelection() {
-        return this.selection;
     }
 
     @Override

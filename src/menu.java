@@ -1,3 +1,5 @@
+import abstract_classes.funcMaster;
+
 import java.util.Dictionary;
 import java.util.Scanner;
 

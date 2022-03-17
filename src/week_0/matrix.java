@@ -1,11 +1,10 @@
-public class matrix extends funcMaster{
+package week_0;
+
+import abstract_classes.funcMaster;
+
+public class matrix extends funcMaster {
     public matrix(String selection) {
         super.selection = selection;
-    }
-
-    @Override
-    public String getSelection() {
-        return this.selection;
     }
 
     public String switchMatrix1(int[][] matrix, int rows, int columns) {
