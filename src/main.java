@@ -37,6 +37,7 @@ public class main {
             try {
                 //Run selection
                 myMenu.run(choice);
+                System.out.println();
             }
             //Return valid values
             catch(Exception e) {
