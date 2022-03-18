@@ -21,22 +21,6 @@ public class W1_C2 extends funcMaster {
         queue<Integer> q1 = new queue();
         queue<Integer> q2 = new queue();
 
-        //insert list into q1
-        for(int i = q1_list.size(); i >= 0; i--) {
-            q1.push(q1_list.get(i));
-        }
-        System.out.println(q1.display());
-
-    }
-    public static void main(String[] args) {
-        //queue list numbers
-        List<Integer> q1_list = Arrays.asList(1, 4, 5, 8);
-        List<Integer> q2_list = Arrays.asList(2, 3, 6, 7);
-
-        //initialize queues
-        queue<Integer> q1 = new queue();
-        queue<Integer> q2 = new queue();
-
         //initialize output queue
         queue<Integer> output = new queue();
 
@@ -49,17 +33,38 @@ public class W1_C2 extends funcMaster {
             q2.push(num);
         }
 
+        System.out.println("List 1: " + q1.display());
+        System.out.println("List 2: " + q2.display());
+
+        //loop until both lists are empty
         while((q1.display() != null) || (q2.display() != null)) {
-            if((q1.peek() < q2.peek()) || ((q1.peek()) == null) || (q2.peek() == null))  {
-                output.push(q1.peek());
-                q1.pop();
-            }
-            else if((q2.peek() < q1.peek()) || ((q1.peek()) == null) || (q2.peek() == null)) {
-                output.push(q2.peek());
-                q2.pop();
+            try {
+                //checks whether q1's output or q2's output is smaller
+                if((q1.peek() < q2.peek()))  {
+                    output.push(q1.peek());
+                    q1.pop();
+                }
+                else if((q2.peek() < q1.peek()) || ((q1.peek()) == null) || (q2.peek() == null)) {
+                    output.push(q2.peek());
+                    q2.pop();
+                }
+                //when a list is null, move to this section
+                //appends any remaining values
+            } catch (Exception e) {
+                if(q1.peek() == null) {
+                    output.push(q2.peek());
+                    q2.pop();
+                    break;
+                }
+                else if(q2.peek() == null) {
+                    output.push(q1.peek());
+                    q1.pop();
+                    break;
+                }
             }
         }
 
-        System.out.println(output.display());
+        System.out.println("Output: " + output.display());
+
     }
 }
