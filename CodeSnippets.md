@@ -30,6 +30,7 @@ public class queue<T> {
 
 # Queue Add and Delete
 - [replit](https://billycherres.github.io/indii3/replit.html)
+
 ```
 //add data to queue
     public void push(T data){
@@ -49,10 +50,12 @@ public class queue<T> {
             return null;
         }
     }
+    
 ```
 
 # Merge 2 Queues 
 - [replit](https://billycherres.github.io/indii3/replit.html)
+
 ```
 while((q1.display() != null) || (q2.display() != null)) {
             try {
