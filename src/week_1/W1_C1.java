@@ -37,7 +37,7 @@ public class W1_C1 extends funcMaster {
             //count queue values
             System.out.print("Words Counted: " + myQueue.length() + " ");
 
-            //print queue arraylist as string
+            //print queue as string
             System.out.println(myQueue.display().
                     toString().replaceAll("\\[|\\]", "")
                     .replaceAll(" "," ")
@@ -55,7 +55,7 @@ public class W1_C1 extends funcMaster {
             //count queue values
             System.out.println("Words Counted: " + myQueue.length() + " ");
 
-            //print queue arraylist as string
+            //print queue as string
             System.out.print("Data: ");
             System.out.print(myQueue.display().
                     toString().replaceAll("\\[|\\]", "")

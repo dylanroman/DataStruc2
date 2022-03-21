@@ -4,6 +4,7 @@ import week_0.matrix;
 import week_0.swapper;
 import week_1.W1_C1;
 import week_1.W1_C2;
+import week_1.W1_C3;
 
 import java.util.*;
 
@@ -20,6 +21,7 @@ public class main {
             myElements.put(3, new matrix("Week 0: Matrix"));
             myElements.put(4, new W1_C1("Week 1 Challenge 1"));
             myElements.put(5, new W1_C2("Week 2 Challenge 2"));
+            myElements.put(6, new W1_C3("Week 3 Challenge 3"));
         }
         
         //Create menu class object
