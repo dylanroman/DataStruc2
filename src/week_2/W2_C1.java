@@ -14,19 +14,21 @@ public class W2_C1 extends funcMaster {
 
     @Override
     public void run() {
-        System.out.println("Input: ");
-        String expression = input.nextLine();
+        try {
+            System.out.println("Enter Expression: ");
+            String expression = input.nextLine();
 
-        calculator myCalculator = new calculator();
+            calculator myCalculator = new calculator();
 
-        ArrayList<String> tokens = myCalculator.tokenizer(expression);
-        ArrayList<String> rpn = myCalculator.toReversePolish(tokens);
+            ArrayList<String> tokens = myCalculator.tokenizer(expression);
+            ArrayList<String> rpn = myCalculator.toReversePolish(tokens);
 
-        System.out.println("Reverse Polish: " + rpn);
+            System.out.println("Reverse Polish: " + rpn);
 
-        Double result = myCalculator.calculate(rpn);
-        System.out.println("Result: " + result);
+            Double result = myCalculator.calculate(rpn);
+            System.out.println("Result: " + result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-
 }
