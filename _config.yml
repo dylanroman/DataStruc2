@@ -15,7 +15,7 @@ author: Dylan Roman
 
 navbar-links:
   Code Snippets: "CodeSnippets"
-  # Resources:
+  # Resources: # this is how you make a dropdown
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
   Replit: "Replit"
