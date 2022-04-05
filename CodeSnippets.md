@@ -1,3 +1,8 @@
+---
+layout: page
+title: Code Snippets
+---
+
 # Code Snippets
 # Table of Contents
 - [Menu Code](https://github.com/BillyCherres/squirty_grinnellians/blob/gh-pages/Challenge_Code.md#menu-code)
